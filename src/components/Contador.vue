@@ -1,18 +1,19 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <h1>Hola mundo</h1>
-  <p>{{ contador }}</p>
-  <button @click="incrementar">incrementar</button>
-  <button @click="decrementar">decrementar</button>
+<h1>Contador</h1>
+<p>{{ contador}}</p>
+<button @click="incrementar">incrementar</button>
+<button @click="decrementar">decrementar</button>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-const contador = ref(0)
+import { ref } from 'vue';
+const contador = ref (0);
 const incrementar = () => {
-  contador.value++
+  contador.value++;
 }
 const decrementar = () => {
-  contador.value--
+  contador.value--;
 }
 </script>
 
